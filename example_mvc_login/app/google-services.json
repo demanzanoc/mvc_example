@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "677293092514",
+    "project_id": "login-mvc-999ca",
+    "storage_bucket": "login-mvc-999ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677293092514:android:1d76ecb07cb9a68282b1fb",
+        "android_client_info": {
+          "package_name": "com.example.example_mvc_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677293092514-sunek8k7ok5n0dcktetsedpacr0pebs0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqpdgFwSBeoFcnZiYucq3VHfEHch5owR0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677293092514-sunek8k7ok5n0dcktetsedpacr0pebs0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

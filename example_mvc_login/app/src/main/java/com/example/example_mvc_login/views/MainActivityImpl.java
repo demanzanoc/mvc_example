@@ -1,10 +1,12 @@
-package com.example.example_mvc_login;
+package com.example.example_mvc_login.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.example_mvc_login.R;
+
+public class MainActivityImpl extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
