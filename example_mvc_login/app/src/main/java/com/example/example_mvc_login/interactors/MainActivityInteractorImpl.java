@@ -38,6 +38,15 @@ public class MainActivityInteractorImpl implements MainActivityInteractor {
 
     @Override
     public void signIn(String email, String password) {
-
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            presenter.onSuccessSignIn(mAuth.getCurrentUser());
+                        } else {
+                            presenter.onFailureSignIn("Error al iniciar sesión!");
+                        }
+                    }
+                });
     }
 }

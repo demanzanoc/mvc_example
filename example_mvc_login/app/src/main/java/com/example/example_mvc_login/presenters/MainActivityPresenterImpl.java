@@ -24,7 +24,7 @@ public class MainActivityPresenterImpl implements MainActivityPresenter {
 
     @Override
     public void signIn(String email, String password) {
-
+        interactor.signIn(email, password);
     }
 
     @Override
@@ -37,5 +37,17 @@ public class MainActivityPresenterImpl implements MainActivityPresenter {
     public void onFailureSignUp(String message) {
         if (view != null)
             view.onFailureSignUp(message);
+    }
+
+    @Override
+    public void onSuccessSignIn(FirebaseUser user) {
+        if (view != null)
+            view.onSuccessSignIn(user);
+    }
+
+    @Override
+    public void onFailureSignIn(String message) {
+        if (view != null)
+            view.onFailureSignIn(message);
     }
 }

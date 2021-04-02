@@ -75,11 +75,22 @@ public class MainActivityViewImpl extends AppCompatActivity implements
     @Override
     public void onSuccessSignUp(FirebaseUser user) {
         Toast.makeText(this, "Bienvenido " + user.getEmail() +
-                ", Ahora puede iniciar sesión", Toast.LENGTH_SHORT).show();
+                ", Ahora puede iniciar sesión", Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void onFailureSignUp(String message) {
+        Toast.makeText(this, "" + message, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onSuccessSignIn(FirebaseUser user) {
+        Toast.makeText(this, "Bienvenido de nuevo " + user.getEmail(),
+                Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onFailureSignIn(String message) {
         Toast.makeText(this, "" + message, Toast.LENGTH_SHORT).show();
     }
 }

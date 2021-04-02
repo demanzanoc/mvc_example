@@ -8,4 +8,7 @@ public interface MainActivityView {
 
     void onFailureSignUp(String message);
 
+    void onSuccessSignIn(FirebaseUser user);
+
+    void onFailureSignIn(String message);
 }

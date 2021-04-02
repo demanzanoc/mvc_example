@@ -8,8 +8,12 @@ public interface MainActivityPresenter {
 
     void signIn(String email, String password);
 
-    void onSuccessSignUp(FirebaseUser user) ;
+    void onSuccessSignUp(FirebaseUser user);
 
     void onFailureSignUp(String message);
+
+    void onSuccessSignIn(FirebaseUser user);
+
+    void onFailureSignIn(String message);
 
 }
